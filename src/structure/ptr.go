@@ -1,4 +1,4 @@
-package main
+package structure
 
 import "fmt"
 
@@ -6,17 +6,16 @@ type Gender int
 
 const (
 	male Gender = iota
-	female 
+	female
 )
 
 type Person struct {
-	name string
-	age int
+	name   string
+	age    int
 	gender Gender
 }
 
-
-func main() {
+func fortest() {
 	var aman *Person = &Person{"ruixin", 2, male}
 	var awoman *Person = new(Person)
 	awoman.name = "weiwei"

@@ -1,4 +1,4 @@
-package main
+package structure
 
 import (
 	"fmt"
@@ -9,10 +9,11 @@ type TagType struct { // tags
 	field1 bool   "An important answer"
 	field2 string "The name of the thing"
 	field3 int    "How much there are"
+	Shit   int
 }
 
-func main() {
-	tt := TagType{true, "Barak Obama", 1}
+func fortest1() {
+	tt := TagType{true, "Barak Obama", 1, 22}
 	for i := 0; i < 3; i++ {
 		refTag(tt, i)
 	}

@@ -1,4 +1,4 @@
-package struct
+package structure
 
 type matrix struct {
 	x int
